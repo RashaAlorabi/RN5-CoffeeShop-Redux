@@ -3,11 +3,14 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import Login from "../Components/Login";
 import Profile from "../Components/Profile";
 import List from "../Components/CoffeeList";
+//import AuthCheck from "../Components/CheckAuth/ProfileCheck";
 
 const AuthStack = createStackNavigator(
   {
+    // ProfileCheck: AuthCheck,
     Login: Login,
-    Profile: Profile
+    Profile: Profile,
+    CoffeeList: List
   },
   {
     initialRouteName: "Login",
